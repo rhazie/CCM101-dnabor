@@ -33,3 +33,13 @@
 - AWS: https://aws.amazon.com/
 - Microsoft Azure: https://azure.microsoft.com/
 - Google Cloud: https://cloud.google.com/
+
+   ## Service Matching Table
+
+   | Service Category | AWS | Azure | GCP |
+   |---|---|---|---|
+   | Virtual Machine | Amazon EC2 | Azure Virtual Machines | Compute Engine |
+   | Object Storage | Amazon S3 | Azure Blob Storage | Cloud Storage |
+   | Identity Management | AWS IAM | Microsoft Entra ID (Azure AD) | Cloud IAM |
+   | SQL Database | Amazon RDS | Azure SQL Database | Cloud SQL |
+   | Kubernetes | Amazon EKS | Azure Kubernetes Service (AKS) | Google Kubernetes Engine (GKE) |
