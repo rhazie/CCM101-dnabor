@@ -6,8 +6,6 @@
 - **Memory:** 1.9 GiB total RAM
 - **Disk Space:** 19 GB total, 13 GB available (`/dev/vda1`)
 
-*(See `screenshots/killercoda-terminal.png` for the terminal output.)*
-
 ### If this Linux server were migrated to the cloud, which AWS, Azure, and GCP services could host it?
 
 Given the small footprint of this server (1 vCPU, ~2GB RAM, ~19GB disk), it's a lightweight workload that fits comfortably into the entry-level virtual machine tiers of all three major cloud providers.
