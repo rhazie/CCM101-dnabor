@@ -28,12 +28,6 @@
 
 **I would personally choose AWS** because it provides a broad range of services and is useful for learning different areas of cloud computing. Its services such as EC2, S3, VPC, and IAM provide a strong foundation for learning cloud infrastructure and deploying applications.
 
-## Sources
-
-- AWS: https://aws.amazon.com/
-- Microsoft Azure: https://azure.microsoft.com/
-- Google Cloud: https://cloud.google.com/
-
    ## Service Matching Table
 
    | Service Category | AWS | Azure | GCP |
@@ -43,3 +37,10 @@
    | Identity Management | AWS IAM | Microsoft Entra ID (Azure AD) | Cloud IAM |
    | SQL Database | Amazon RDS | Azure SQL Database | Cloud SQL |
    | Kubernetes | Amazon EKS | Azure Kubernetes Service (AKS) | Google Kubernetes Engine (GKE) |
+
+
+   ## Sources
+
+- AWS: https://aws.amazon.com/
+- Microsoft Azure: https://azure.microsoft.com/
+- Google Cloud: https://cloud.google.com/
