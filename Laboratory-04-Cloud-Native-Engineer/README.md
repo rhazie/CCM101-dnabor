@@ -30,5 +30,4 @@ CloudNova Technologies has a client whose traditional Virtual Machines are slow 
 - Documenting technical procedures clearly in Markdown
 
 ## Challenges Encountered
-## Challenges Encountered
 No major challenges were encountered during this lab. Having already completed Laboratories 1–3, I was familiar with using the KillerCoda terminal and navigating the GitHub repository, which made the Docker commands in this lab straightforward to follow. The main adjustment was learning new Docker-specific syntax (such as `-d`, `-p`, and `--name`), but the commands worked as expected on the first attempt.
