@@ -7,3 +7,10 @@
 ```
 
 Without application logs, it would be difficult to determine what caused a failure because we would not have the error messages and events leading up to it. The timestamp and IP address show exactly when the problem happened and which client was involved, as in the `/hidden-admin-page` 404 above, which is especially useful when many users are accessing the server at the same time.
+
+## Container Metrics
+
+At the time of the screenshot, the `client-website` container was consuming:
+
+- **Memory Usage:** 2.734MiB
+- **CPU Usage:** 0.00%
