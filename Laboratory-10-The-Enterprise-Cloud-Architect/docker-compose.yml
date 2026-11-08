@@ -1,0 +1,40 @@
+cat << 'EOF' > ~/bookstack-app/docker-compose.yml
+services:
+  bookstack_db:
+    image: mysql:8.0
+    container_name: bookstack_db
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=root_password123
+      - MYSQL_DATABASE=bookstackapp
+      - MYSQL_USER=bookstack_user
+      - MYSQL_PASSWORD=strong_password123
+    volumes:
+      - db_data:/var/lib/mysql
+
+  bookstack:
+    image: lscr.io/linuxserver/bookstack:latest
+    container_name: bookstack_web
+    restart: always
+    depends_on:
+      - bookstack_db
+    ports:
+      - "80:80"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Manila
+      - APP_URL=http:/192.168.0.46
+      - APP_KEY=base64:o/GXOaMX1S5c3Slg2l3rZNTSg2m0bxXnLQOdKMLoFq8=
+      - DB_HOST=bookstack_db
+      - DB_PORT=3306
+      - DB_USERNAME=bookstack_user
+      - DB_PASSWORD=strong_password123
+      - DB_DATABASE=bookstackapp
+    volumes:
+      - bookstack_data:/config
+
+volumes:
+  db_data:
+  bookstack_data:
+EOF
